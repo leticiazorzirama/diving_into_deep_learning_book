@@ -1,10 +1,10 @@
-# Following along Dive into Deep Learning
+# Diving into Deep Learning
 
-This repo contains my code and notes as I work through **[Dive into Deep Learning (D2L)](https://d2l.ai/)**, implementing the exercises and examples using **PyTorch**.
+I maintain this repo as I folow along **[Dive into Deep Learning (D2L)](https://d2l.ai/)**, implementing the codes and the exercises using **[PyTorch](https://pytorch.org/)**.
 
 ## About
 
-D2L is an open-source book that teaches deep learning concepts through interactive notebooks combining math, code, and explanations. This repo is my personal record as I follow along chapter by chapter.
+D2L is an open-source book that teaches deep learning concepts through interactive notebooks combining math, code, and explanations.
 
 ## Structure
 
@@ -28,12 +28,25 @@ Each chapter folder contains the scripts for each subchapter's codes and exercis
 ## Progress
 
 - [x] Ch. 1 — Introduction
-- [currently here] Ch. 2 — Preliminaries
+- [x] Ch. 2 — Preliminaries <<< *currently here*
 - [ ] Ch. 3 — Linear Neural Networks
 - [ ] Ch. 4 — Multilayer Perceptrons
 - [ ] ...
 
 ## Resources
 
-- [D2L Book (online)](https://d2l.ai/)
-- [D2L GitHub](https://github.com/d2l-ai/d2l-en)
+[D2L Book (online)](https://d2l.ai/) | [D2L GitHub](https://github.com/d2l-ai/d2l-en)
+
+## Reference
+ 
+> Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2023). *Dive into Deep Learning*. Cambridge University Press. https://D2L.ai
+ 
+```bibtex
+@book{zhang2023dive,
+    title={Dive into Deep Learning},
+    author={Zhang, Aston and Lipton, Zachary C. and Li, Mu and Smola, Alexander J.},
+    publisher={Cambridge University Press},
+    note={\url{https://D2L.ai}},
+    year={2023}
+}
+```
