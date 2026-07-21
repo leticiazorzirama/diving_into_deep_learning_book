@@ -85,3 +85,34 @@ a, a.item(), float(a), int(a)
 # 2.1.7. Summary
 
 # 2.1.8. Exercises
+
+# 1. Change the conditional statement X == Y to X < Y or X > Y, 
+# and then see what kind of tensor you can get.
+
+X
+Y
+X == Y
+
+X < Y
+X > Y
+
+X.size() == Y.size()
+
+# Get boolean tensors as the result of element-wise inequality operations.
+# Equal dimensions of X and Y make the operation element-wise without the need of
+# broadcasting.
+
+# 2. Replace the two tensors that operate by element in the broadcasting mechanism 
+# with other shapes, e.g., 3-dimensional tensors. Is the result the same as expected?
+
+x = torch.arange(9).reshape((3,3,1))
+y = torch.ones(6).reshape((3,1,2))
+
+x
+y
+
+x+y
+
+# There are different rules for broadcasting with other shapes like 3-dimensional.
+
+
