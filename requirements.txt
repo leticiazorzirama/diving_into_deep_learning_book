@@ -1,0 +1,5 @@
+# Dive into Deep Learning (d2l.ai) — PyTorch edition
+# Minimal dependencies for this project's venv only
+
+torch>=2.1
+torchvision>=0.16
