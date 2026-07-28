@@ -27,3 +27,23 @@ import pandas as pd
 data = pd.read_csv(data_path)
 print(data)
 
+# 2.2.2. Data Preparation
+inputs, targets = data.iloc[:, 0:2], data.iloc[:, 2] # separate input form target
+
+# handle missing values with imputation
+inputs = pd.get_dummies(inputs, dummy_na = True) # get dummies for categorical values
+print(inputs) 
+
+inputs = inputs.fillna(inputs.mean()) # replace with the mean 
+print(inputs)
+
+# 2.2.3. Conversion to the Tensor Format
+
+import torch
+
+# transform pandas objects into tensors 
+X = torch.tensor(inputs.to_numpy(dtype=float)) 
+y = torch.tensor(targets.to_numpy(dtype=float))
+X, y
+
+# 2.2.5. Exercises
