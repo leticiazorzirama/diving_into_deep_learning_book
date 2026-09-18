@@ -1,10 +1,14 @@
 # Diving into Deep Learning
 
-I maintain this repo as I folow along **[Dive into Deep Learning (D2L)](https://d2l.ai/)**, implementing the codes and the exercises using **[PyTorch](https://pytorch.org/)**.
+*I maintain this repo as I folow along [Dive into Deep Learning (D2L)](https://d2l.ai/), implementing the codes and the exercises using [PyTorch](https://pytorch.org/).*
+
+---
 
 ## About
 
 D2L is an open-source book that teaches deep learning concepts through interactive notebooks combining math, code, and explanations.
+
+---
 
 ## Structure
 
@@ -25,6 +29,8 @@ The repo is organized by chapter, with folders for each chapter, mirroring the b
 ```
 Each chapter folder contains the scripts for each subchapter's codes and exercises.
 
+---
+
 ## Progress
 
 - [x] Ch. 1 — Introduction
@@ -33,9 +39,13 @@ Each chapter folder contains the scripts for each subchapter's codes and exercis
 - [ ] Ch. 4 — Multilayer Perceptrons
 - [ ] ...
 
+---
+
 ## Resources
 
 [D2L Book (online)](https://d2l.ai/) | [D2L GitHub](https://github.com/d2l-ai/d2l-en)
+
+---
 
 ## Reference
  
@@ -50,3 +60,5 @@ Each chapter folder contains the scripts for each subchapter's codes and exercis
     year={2023}
 }
 ```
+
+---
