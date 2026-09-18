@@ -17,12 +17,12 @@ x + y, x * y, x / y, x**y
 # (one-based indexing).
 
 x = torch.arange(3)
-x
+print(x)
 x[2]
 len(x)
 
 # The shape is a tuple that indicates a tensor’s length along each axis. Tensors with just one axis have shapes with just one element.
-x.shape
+print(x.shape)
 
 # Oftentimes, the word “dimension” gets overloaded to mean both the number of axes and the 
 # length along a particular axis. To avoid this confusion, we use order to refer to the number 
@@ -39,10 +39,10 @@ x.shape
 # j = n columns indices
 
 A = torch.arange(6).reshape(3, 2)
-A
+print(A)
 
 # transpose
-A.T
+print(A.T)
 
 # test transposes
 # a i j 
@@ -57,8 +57,8 @@ A.T[0,2]
 
 # symmetric matrices
 A = torch.tensor([[1, 2, 3], [2, 0, 4], [3, 4, 5]])
-A
-A == A.T
+print(A)
+print(A == A.T)
 
 # 2.3.4. Tensors
 
@@ -90,19 +90,19 @@ x, x.sum()
 A.shape, A.sum()
 
 # sum over the axis = 0
-A
-A.shape
+print(A)
+print(A.shape)
 A.sum(axis=0)
-A.sum(axis=0).shape
+print(A.sum(axis=0).shape)
 
 # sum over the axis = 1
-A
-A.shape
+print(A)
+print(A.shape)
 A.sum(axis=1)
-A.sum(axis=1).shape
+print(A.sum(axis=1).shape)
 
 # reduce along both rows and columns
-A.sum(axis=[0, 1]) == A.sum()  # Same as A.sum()
+print(A.sum(axis=[0, 1]) == A.sum())  # Same as A.sum()
 
 # mean
 A.mean(), A.sum() / A.numel()
@@ -114,7 +114,7 @@ A.mean(axis=1), A.sum(axis=1) / A.shape[1]
 # 2.3.7. Non-Reduction Sum
 # broadcast mechanism
 sum_A = A.sum(axis=1, keepdims=True)
-sum_A, sum_A.shape
+print(sum_A, sum_A.shape)
 
 A / sum_A
 
