@@ -1,3 +1,5 @@
+# 2.3 Linear Algebra
+
 import torch
 
 # 2.3.1. Scalars
@@ -113,13 +115,13 @@ A.mean(axis=1), A.sum(axis=1) / A.shape[1]
 
 # 2.3.7. Non-Reduction Sum
 # broadcast mechanism
-sum_A = A.sum(axis=1, keepdims=True)
+sum_A = A.sum(dim=1, keepdim=True)
 print(sum_A, sum_A.shape)
 
 A / sum_A
 
 # cumulative sum
-A.cumsum(axis=0)
+A.cumsum(dim=0)
 
 # 2.3.8. Dot Products
 

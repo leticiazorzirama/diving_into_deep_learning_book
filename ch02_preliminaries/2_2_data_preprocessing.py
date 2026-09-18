@@ -1,4 +1,4 @@
-# Data preprocessing
+# 2.2. Data preprocessing
 
 # 2.2.1. Reading the Dataset
 
@@ -19,7 +19,7 @@ NA,NA,140000''')
 
 # Save data path
 data_path = os.path.join(path, 'data/house_tiny.csv')
-data_path
+print(data_path)
 
 import pandas as pd
 
@@ -44,6 +44,6 @@ import torch
 # transform pandas objects into tensors 
 X = torch.tensor(inputs.to_numpy(dtype=float)) 
 y = torch.tensor(targets.to_numpy(dtype=float))
-X, y
+print(X, y)
 
 # 2.2.5. Exercises
